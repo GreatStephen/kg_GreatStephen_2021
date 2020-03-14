@@ -1,12 +1,13 @@
 import sys
 
 if __name__ == "__main__":
-    print(len(sys.argv))
-    if(len(sys.argv)!=3):
+    # print(len(sys.argv))
+    if len(sys.argv) != 3:
         print("Please provide proper input!")
+        sys.exit(0)
     s = sys.argv[1]
     t = sys.argv[2]
-    if len(s)!=len(t):
+    if len(s) != len(t):
         print("false")
         sys.exit(0)
     dict1 = {}
